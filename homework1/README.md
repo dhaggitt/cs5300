@@ -24,7 +24,7 @@ python3 -m pip install -r requirements.txt
 
 This will create the virtual environment, allow us to connect, then install the packages specified in the supplied ```requirements.txt```
 
-# Running the tests
+## Running the tests
 The ```homework1/src``` directory contains ```__init__.py```, which allows us to import our task files as a package. We move over to the homework1 directory first using:
 
 ```
