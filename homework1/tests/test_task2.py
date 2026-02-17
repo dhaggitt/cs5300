@@ -1,7 +1,7 @@
 import pytest
 from src import task2
 
-def test_output(capsys):
+def test_output():
     # Variables declared for efficiency
     x = task2.return_integer()
     y = task2.return_float()
