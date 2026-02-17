@@ -1,3 +1,4 @@
+# This prints Hello World!
 def main():
     print("Hello World!")
 
