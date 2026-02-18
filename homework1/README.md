@@ -1,6 +1,14 @@
 # Homework 1
 Below are instructions for running these tests on your machine. Since I don't know your entire environment, this assumes you also need to run DevEDU on Docker locally, and set up the virtual environment in python.
 The Dockerfile copies over the requirements.txt to the home directory, and the docker run will initialize you in the home directory.
+
+## Dependencies (included in requirements.txt)
+
+| Package | Version |
+|---------|---------|
+| [NumPy](https://numpy.org/) | `2.4.2` |
+| [Pytest](https://docs.pytest.org/) | `9.0.2` |
+
 ## Running DevEDU in Docker locally
 First, we build the Docker image:
 
