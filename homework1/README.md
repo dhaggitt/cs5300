@@ -3,12 +3,17 @@ Below are instructions for running these tests on your machine. Since I don't kn
 The Dockerfile copies over the requirements.txt to the home directory, and the docker run will initialize you in the home directory.
 ## Running DevEDU in Docker locally
 First, we build the Docker image:
+
 ``` docker build -t cs5300-devedu . ```
+
 Once the image is built, we can run it using:
+
 ``` docker run --name cs5300 -d -p 80:80 -p 3000:3000 cs5300-devedu```
+
 These steps create an image named "cs5300-devedu" and a container named "cs5300".
 
 To execute from the container, we create an interactive shell using: 
+
 ```docker exec -it cs5300 /bin/bash```
 
 Otherwise, we can connect to ```localhost``` on our web browser, which takes us to the running container (and the dev environment)
