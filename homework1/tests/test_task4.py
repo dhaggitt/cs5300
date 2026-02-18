@@ -10,3 +10,4 @@ def test_output():
     assert task4.calculate_discount(80, 6.5) == 74.80
     assert task4.calculate_discount(12.95, 51.5) == 6.28
     assert task4.calculate_discount(180, 180) == -144.00
+    assert task4.calculate_discount(40, -20) == 48.00
