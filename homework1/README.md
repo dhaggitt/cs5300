@@ -18,6 +18,8 @@ To execute from the container, we create an interactive shell using:
 
 Otherwise, we can connect to ```localhost``` on our web browser, which takes us to the running container (and the dev environment)
 
+_(Developer note: We should add functionality to also copy over the .ssh directory for Github auth key)_
+
 ## Running the virtual environment
 Once connected to ```localhost```, we then open a terminal and run the following commands:
 
@@ -28,6 +30,13 @@ python3 -m pip install -r requirements.txt
 ```
 
 This will create the virtual environment, allow us to connect, then install the packages specified in the supplied ```requirements.txt```
+
+## Pulling the CS5300 Github repo
+From ```/student/home```, we need to clone the github repo using:
+
+```
+git clone https://github.com/dhaggitt/cs5300.git
+```
 
 ## Running the tests
 The ```homework1/src``` directory contains ```__init__.py```, which allows us to import our task files as a package. We move over to the homework1 directory first using:
