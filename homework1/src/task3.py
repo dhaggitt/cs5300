@@ -1,7 +1,3 @@
-import math
-
-# This function checks if a number is
-# positive, negative, or zero
 def check_sign(x: int):
     sign = ""
     if (x < 0):
@@ -11,9 +7,9 @@ def check_sign(x: int):
     else:
         sign = "zero"
     return sign
+""" This function checks if a number is positive, negative, or zero"""
 
-# This function will calculate the first n primes
-# This is separated to maintain ability for refactoring
+
 def calc_prime(limit: int):
     count = 0
     number = 1
@@ -28,15 +24,17 @@ def calc_prime(limit: int):
             count += 1
         number += 1
     return primes
+""" This function will calculate the first n primes
+    This is separated to maintain ability for refactoring """
 
-# This function will print out the first 10 prime numbers
+
 def first_ten_prime():
     ten_primes = calc_prime(10)
     for p in ten_primes:
         print(p)
+""" This function will print out the first 10 prime numbers """
 
-# This function will find the sum of all numbers (assuming whole)
-# from 1 to 100
+
 def century_sum():
     LIMIT = 100
     number = 1
@@ -45,9 +43,10 @@ def century_sum():
         total_sum += number
         number += 1
     return total_sum
+""" This function will find the sum of all numbers (assuming whole)
+    from 1 to 100 """
 
 
-# Main declared for debugging
 def main():
 
     # Checks the output of the check_sign function
@@ -60,6 +59,8 @@ def main():
 
     # Calls the century sum function
     print("The sum of numbers 1-100 (inclusive) is", century_sum())
+""" Main declared for debugging """
+
 
 if __name__ == "__main__":
     main()
