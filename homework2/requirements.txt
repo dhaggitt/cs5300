@@ -1,0 +1,10 @@
+flake8
+flake8-docstrings
+django==6.0
+djangorestframework
+behave-django
+psycopg2-binary
+dj-database-url
+whitenoise[brotli]
+gunicorn
+uvicorn
